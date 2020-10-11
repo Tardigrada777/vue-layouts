@@ -1,8 +1,8 @@
 # l5s
 
 #### TODO (proto)
-- [x] fixed
+- [x] index
 - [ ] sticky
-- [ ] absolute
+- [x] absolute
 - [ ] row
 - [ ] column

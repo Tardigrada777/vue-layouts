@@ -1,0 +1,7 @@
+.l-absolute {
+  position: relative;
+
+  &__item {
+    position: absolute;
+  }
+}

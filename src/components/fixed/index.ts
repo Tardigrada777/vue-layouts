@@ -1,10 +1,9 @@
-import { defineComponent, h , Slot } from 'vue';
-
-const px = (n: number) => `${n}px`;
-
-const slot = (slot?: Slot) => slot ? slot() : null;
+import { defineComponent, h } from 'vue';
+import { px } from '@/utils/styles';
+import { slot } from '@/utils/components';
 
 export const fixed = defineComponent({
+  name: 'l-fixed',
   props: {
     top: {
       type: Number,
