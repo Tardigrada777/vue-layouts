@@ -6,7 +6,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import { fixed } from "@/components/fixed";
+import { fixed } from "@/components/fixed/fixed";
 
 export default defineComponent({
   name: 'App',
@@ -17,7 +17,7 @@ export default defineComponent({
 </script>
 
 <style lang="scss">
-@import './components/fixed';
+@import 'components/main';
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

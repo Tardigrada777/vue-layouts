@@ -1,4 +1,4 @@
-import { defineComponent, h , Slot} from 'vue';
+import { defineComponent, h , Slot } from 'vue';
 
 const px = (n: number) => `${n}px`;
 
