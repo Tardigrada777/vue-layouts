@@ -1,20 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <fixed :left="15" :bottom="15">
+    <div style="width: 30px; height: 30px; background: red; border-radius: 50%"></div>
+  </fixed>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script lang="ts">
+import { defineComponent } from 'vue';
+import { fixed } from "@/components/fixed";
 
-export default {
+export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld
+    fixed,
   }
-}
+});
 </script>
 
-<style>
+<style lang="scss">
+@import './components/fixed';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
