@@ -1,4 +1,35 @@
 <template>
+  <!-- sticky -->
+  <l-sticky style="color: white">
+    <div class="topbar"></div>
+  </l-sticky>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, repellendus vitae! Adipisci dolore in, itaque
+    maxime modi quo repudiandae sint.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, repellendus vitae! Adipisci dolore in, itaque
+    maxime modi quo repudiandae sint.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, repellendus vitae! Adipisci dolore in, itaque
+    maxime modi quo repudiandae sint.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, repellendus vitae! Adipisci dolore in, itaque
+    maxime modi quo repudiandae sint.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, repellendus vitae! Adipisci dolore in, itaque
+    maxime modi quo repudiandae sint.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, repellendus vitae! Adipisci dolore in, itaque
+    maxime modi quo repudiandae sint.</p>
+  <l-sticky>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, repellendus vitae! Adipisci dolore in, itaque
+      maxime modi quo repudiandae sint.</p>
+  </l-sticky>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, repellendus vitae! Adipisci dolore in, itaque
+    maxime modi quo repudiandae sint.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, repellendus vitae! Adipisci dolore in, itaque
+    maxime modi quo repudiandae sint.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, repellendus vitae! Adipisci dolore in, itaque
+    maxime modi quo repudiandae sint.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, repellendus vitae! Adipisci dolore in, itaque
+    maxime modi quo repudiandae sint.</p>
+
+
   <!-- fixed -->
   <l-fixed :left="15" :bottom="15">
     <div style="width: 30px; height: 30px; background: red; border-radius: 50%"></div>
@@ -13,9 +44,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import {defineComponent} from 'vue';
 import { fixed } from "@/components/fixed";
 import { absolute, absoluteItem } from '@/components/absolute';
+import { sticky } from '@/components/sticky';
 
 export default defineComponent({
   name: 'App',
@@ -23,10 +55,33 @@ export default defineComponent({
     [fixed.name]: fixed,
     [absolute.name]: absolute,
     [absoluteItem.name]: absoluteItem,
+    [sticky.name]: sticky,
   }
 });
 </script>
 
 <style lang="scss">
-@import 'components/main';
+@import 'styles/main';
+
+/* TODO: remove */
+p {
+  font-size: 36px;
+}
+
+.topbar {
+  height: 50px;
+  background-color: deeppink;
+}
+
+.container {
+  height: 500px;
+  background: black;
+  overflow-x: scroll;
+}
+
+.left-sidebar {
+  width: 50px;
+  height: 100%;
+  background: darkblue;
+}
 </style>

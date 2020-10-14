@@ -1,6 +1,6 @@
 import { defineComponent, h } from 'vue';
 import { px } from '@/utils/styles';
-import { slot } from '@/utils/components';
+import { getCustomStyles, slot } from '@/utils/components';
 
 export const fixed = defineComponent({
   name: 'l-fixed',
@@ -23,11 +23,14 @@ export const fixed = defineComponent({
     },
   },
   render() {
+    const styles = getCustomStyles(this.$attrs);
+
     return h(
       'span',
       {
         className: 'l-fixed',
         style: {
+          ...styles,
           top: this.$props.top ? px(this.$props.top) : null,
           bottom: this.$props.bottom ? px(this.$props.bottom) : null,
           left: this.$props.left ? px(this.$props.left) : null,
