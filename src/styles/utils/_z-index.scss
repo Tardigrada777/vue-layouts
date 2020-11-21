@@ -1,0 +1,13 @@
+$z-layers: 50;
+
+.z-n1 {
+  z-index: -1;
+}
+
+@for $depth from 1 through $z-layers {
+  @if $depth % 10 == 0 {
+    .z-#{$depth} {
+      z-index: $depth;
+    }
+  }
+}

@@ -79,7 +79,7 @@
   </l-absolute>
 
   <h3>center</h3>
-  <l-center x y>
+  <l-center full style="height: 450px" :z="30">
     <span>Center</span>
   </l-center>
 </template>

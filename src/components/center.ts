@@ -1,9 +1,13 @@
 import { defineComponent, h } from 'vue';
 import { getCustomStyles, slot } from '@/utils/components';
+import { commonProps } from './commonProps';
+import { useZIndex } from '@/composables/useZIndex';
 
 export const center = defineComponent({
   name: 'l-center',
   props: {
+    ...commonProps,
+
     full: {
       type: Boolean,
       default: true
@@ -27,7 +31,7 @@ export const center = defineComponent({
 
     const styles = getCustomStyles(this.$attrs);
 
-    const classNames = ['l-center'];
+    let classNames = ['l-center'];
 
     if (this.$props.x) {
       classNames.push('l-center--x');
@@ -36,6 +40,8 @@ export const center = defineComponent({
     } else if (this.$props.full) {
       classNames.push('l-center--full');
     }
+
+    classNames = useZIndex(classNames, this.$props.z);
 
     return h(
       'div',
