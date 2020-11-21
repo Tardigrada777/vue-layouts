@@ -21,9 +21,21 @@ yarn
 yarn serve
 ```
 
+3. **run unit tests**
+
+```bash
+yarn test:unit
+```
+
 #### TODO (proto)
 
 - [ ] base component with common properties
+  - [x] z (z-index)
+  - [ ] tag
+  - [ ] mx, my
+  - [ ] mt, mr, mb, ml
+  - [ ] px, py
+  - [ ] pt, pr, pb, pl
 - [x] fix
 - [x] sticky
 - [x] absolute
