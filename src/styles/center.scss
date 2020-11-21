@@ -1,0 +1,14 @@
+.l-center {
+  display: flex;
+
+  &--full {
+    justify-content: center;
+    align-items: center;
+  }
+  &--x {
+    justify-content: center;
+  }
+  &--y {
+    align-items: center;
+  }
+}
