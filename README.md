@@ -1,3 +1,5 @@
+![test:unit](https://github.com/Tardigrada777/vue-layouts/workflows/Vue.js%20CI/badge.svg)
+
 #### vue-layouts (l5s)
 
 Small, simple and fast lib for convinience building layouts with Vue 3.
