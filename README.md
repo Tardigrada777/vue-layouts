@@ -1,4 +1,4 @@
-![test:unit](https://github.com/Tardigrada777/vue-layouts/workflows/Vue.js%20CI/badge.svg)
+![Node.js CI](https://github.com/Tardigrada777/vue-layouts/workflows/Node.js%20CI/badge.svg)
 
 #### vue-layouts (l5s)
 
