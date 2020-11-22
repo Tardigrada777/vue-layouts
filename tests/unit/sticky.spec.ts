@@ -51,4 +51,17 @@ describe('l-sticky', () => {
       `${77}px`
     );
   });
+
+  it('renders correctly passed styles', () => {
+    const wrapper = shallowMount(sticky, {
+      attrs: {
+        style: {
+          overflow: 'hidden'
+        }
+      }
+    });
+    expect(
+      wrapper.find<HTMLElement>('.l-sticky').element.style.overflow
+    ).toEqual('hidden');
+  });
 });
