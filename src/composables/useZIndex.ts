@@ -3,6 +3,8 @@ export const useZIndex = (
   zIndex: string | number | undefined
 ) => {
   if (zIndex) {
+    if (!zIndex) classNames;
+
     const zDepth = parseFloat(`${zIndex}`);
 
     if (zDepth < 0) {
