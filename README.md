@@ -29,6 +29,31 @@ yarn serve
 yarn test:unit
 ```
 
+### Examples
+
+#### sticky
+
+##### html
+
+```html
+<l-sticky>
+  <div class="topbar"></div>
+</l-sticky>
+```
+
+##### props
+
+| name   |  type  | default |                     description                     |
+| ------ | :----: | ------: | :-------------------------------------------------: |
+| to     | string |     top | direction to stick `top`, `right`, `bottom`, `left` |
+| offset | number |       0 | offset amount, that converts to Npx value for `to`  |
+
+##### slots
+
+| name    |           description           |
+| ------- | :-----------------------------: |
+| default | content passed via default slot |
+
 #### TODO (proto)
 
 - [ ] base component with common properties
